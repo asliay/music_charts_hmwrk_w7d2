@@ -1,8 +1,10 @@
-const Song = ({title}) => {
+import "./Song.css"
+
+const Song = ({title, artist}) => {
   return (
     <>
-      <li>
-        {title}
+      <li className="SongElement">
+        {title} - {artist} 
       </li>
     </>
   )

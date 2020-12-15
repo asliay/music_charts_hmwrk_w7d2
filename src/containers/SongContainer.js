@@ -1,5 +1,6 @@
 import {useEffect, useState} from "react";
 import SongChart from "../components/SongChart"
+import "./SongContainer.css"
 
 const SongContainer = () => {
   
@@ -24,7 +25,6 @@ const SongContainer = () => {
   if (!chart) return null;
   return (
     <>
-      <h1>iTunes UK Top 20</h1>
       <SongChart chart={chart} />
     </>
   )
