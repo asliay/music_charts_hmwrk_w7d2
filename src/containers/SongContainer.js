@@ -24,9 +24,9 @@ const SongContainer = () => {
 
   if (!chart) return null;
   return (
-    <>
+    <div className="SongContainer">
       <SongChart chart={chart} />
-    </>
+    </div>
   )
 }
 

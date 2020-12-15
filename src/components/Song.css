@@ -1,3 +1,11 @@
-.SongImage {
-  border-radius: 0 35px 0 35px;
+.SongElement {
+  list-style: none;
+  color: white;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.SongImage {
+  border-radius: 0 25px 0 25px;
+}
+
+
