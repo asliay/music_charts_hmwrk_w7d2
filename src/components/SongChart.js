@@ -8,6 +8,8 @@ const SongChart = ({chart}) => {
       <Song 
         title={song['im:name'].label} 
         artist={song['im:artist'].label} 
+        image={song.['im:image'][2].label}
+        audio={song.link[1].attributes.href}
         key={index} 
       />
     );
