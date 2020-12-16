@@ -3,15 +3,13 @@ import "./Song.css"
 const Song = ({chartPosition, title, artist, audio, image}) => {
   return (
     <>
-      <li className="SongElement">
-        <div className="SongDiv">
-          <h2 className="ChartPosition">#{chartPosition}</h2>
-          <img className="SongImage" src={image} alt="songCover" />
-          <h3 className="SongInfo"> {title} <br/>
+      <li className="song-element">
+        <div className="song-div">
+          <h2 className="chart-position">#{chartPosition}</h2>
+          <img className="song-image" src={image} alt="songCover" />
+          <h3 className="song-info"> {title} <br/>
           - {artist}</h3>
-          <audio className="SongClip" src={audio} controls>
-            Your browser does not support this audio preview.
-          </audio>
+          <audio className="song-clip" src={audio} controls/>
         </div>
       </li>
     </>

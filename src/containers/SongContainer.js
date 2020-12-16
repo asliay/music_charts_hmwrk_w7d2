@@ -4,7 +4,7 @@ import "./SongContainer.css"
 
 const SongContainer = () => {
   
-  const [chart, setChart] = useState(null);
+  const [songs, setSongs] = useState(null);
 
   const getChart = () => {
     
@@ -14,7 +14,7 @@ const SongContainer = () => {
         return res.json();
       })
       .then((data) => {
-        setChart(data.feed.entry);
+        setSongs(data.feed.entry);
       })
   };
 
@@ -22,10 +22,10 @@ const SongContainer = () => {
     getChart();
   }, [])
 
-  if (!chart) return null;
+  if (!songs) return null;
   return (
-    <div className="SongContainer">
-      <SongChart chart={chart} />
+    <div className="song-container">
+      <SongChart songs={songs} />
     </div>
   )
 }

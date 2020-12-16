@@ -1,9 +1,9 @@
 import Song from "./Song"
 import "./SongChart.css"
 
-const SongChart = ({chart}) => {
+const SongChart = ({songs}) => {
   
-  const songItems = chart.map((song, index) => {
+  const songItems = songs.map((song, index) => {
     return (
       <Song 
         chartPosition={index + 1}
@@ -18,7 +18,7 @@ const SongChart = ({chart}) => {
 
   return (
     <>
-      <ul className="ChartList">
+      <ul className="chart-list">
         {songItems}
       </ul>
     </>
